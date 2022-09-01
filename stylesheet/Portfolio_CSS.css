@@ -1,0 +1,305 @@
+/* GENERAL STYLING */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0%;
+    overflow-x: hidden;
+    user-select:none;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 3%;
+    color: white;
+}
+
+div.container {
+    text-align: center;
+}
+
+ul.myUL {
+    display: inline-block;
+    text-align: left;
+}
+
+p {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.quote {
+    text-align: center;
+}
+
+.quote:hover {
+    color: rebeccapurple;
+}
+
+a {
+    color: lightblue;
+}
+
+img {
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition:filter 1s;
+}
+
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+footer {
+    padding: .1%;
+    background-color: grey;
+}
+
+footer p {
+    text-align: center;
+}
+
+.gitlink {
+    margin-top: -20%;
+}
+
+/* END OF GEN STYLING */
+
+/* NAVBAR STYLING */
+.Navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+.Navbar a {
+    float: left;
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Avant Garde, Helvetica;
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+}
+
+.Navbar a btn {
+    float: right;
+    display: block;
+    color: black;
+    background-color: mediumpurple;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Avant Garde, Helvetica;
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+    border-color: white;
+    border-width: 4px;
+}
+
+.Navbar a:hover {
+    background-color: grey;
+}
+/* END OF GEN STYLING */
+
+
+/* VID STYLING **/
+@media screen and (max-width: 576px) {
+    #starsvideo {
+        display: none;
+    }
+
+    .Video_Text {
+        color: black;
+    }
+}
+
+#starsvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+.Video_Text {
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 200px;
+    padding-bottom: 400px;
+}
+
+#quote {
+    font-size: xx-small;
+}
+
+
+/* CONTACT STYLING */
+#Contact {
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+
+#Contact p {
+    padding-bottom: 1em;
+    text-align: center;
+    color:aliceblue;
+}
+.email-link {
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+    color: black;
+    padding: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* SlideShow */
+#Slideshow_Container {
+    width: 25vw;
+    height: auto;
+    padding-top: 4%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+#Slideshow_Container a {
+    text-decoration: none;
+}
+
+.email-link:hover {
+    border-color: blueviolet;
+}
+
+.email-link {
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+    color: white;
+    font-family: "Trebuchet MS", Optima;
+    text-decoration: none;
+}
+
+
+/* SlideShow */
+#About {
+    margin: auto;
+    margin-bottom: 25%;
+    width: 60%;
+    padding: 5px;
+    padding-bottom: 5px;
+    padding-top: 100px;
+}
+
+#ImgContainer {
+    float: left;
+    border: 7.5px solid white;
+    border-radius: 1em;
+}
+
+#AboutText {
+    color: white;
+    padding-left: 25%;
+}
+
+#About li {
+    float: left;
+    display: block;
+    padding: 16px;
+}
+
+#About a {
+    text-align: center;
+}
+
+
+#Portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 20%;
+    margin-bottom: 25%;
+    width: 50%;
+    padding-top: 200px;
+}
+
+#githubLink {
+    color: red;
+    margin-top: -20%;
+    margin-bottom: 25%;
+}
+
+.portfolioHeader {
+    display: block;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 20%;
+    margin-bottom: -7.5%;
+    width: 50%;
+}
+
+.video1 {
+    text-align: left;
+    margin-right: auto;
+    margin-left: 20%;
+    border-color: white;
+    border-style: solid;
+    border-radius: 1em;
+}
+
+.CardBattle {
+    color: white;
+    padding: 5%;
+}
+
+.textContainer {
+    background: rgba(0, 0, 0, 1);
+    border-color: white;
+    border-style: solid;
+    border-radius: 1em;
+    margin-left: 10%;
+}
